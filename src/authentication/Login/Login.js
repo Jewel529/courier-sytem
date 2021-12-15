@@ -5,7 +5,7 @@ import useAuth from "../../hooks/useAuth";
 import "./Login.css";
 
 const Login = () => {
-  const { signInUsingGoogle, setUser, setLoading, setError, error } = useAuth();
+  const { signInUsingGoogle, setUser, setLoading } = useAuth();
   const history = useHistory();
   const location = useLocation();
   const url = location.state?.from || "/home";
@@ -24,12 +24,14 @@ const Login = () => {
     // ...
   };
   return (
-    <div className="login-container">
-      <h1 className="fw-bold text-info ">Please Sign In</h1>
-      <Button className="btn-warning" onClick={handleGoogle}>
-        Google
-      </Button>
-      <h2>{error}</h2>
+    <div className="main-login-container">
+      <h1 className="text-danger fw-bold  ">Please Register</h1>
+      <div className="login-container">
+        <h1 className="fw-bold text-success fs-4">Sign In with Google</h1>
+        <Button className="btn-warning" onClick={handleGoogle}>
+          Google
+        </Button>
+      </div>
     </div>
   );
 };

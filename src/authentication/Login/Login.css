@@ -1,0 +1,14 @@
+.main-login-container {
+  background-color: rgb(223, 207, 190);
+}
+
+.login-container {
+  border: 2px solid black;
+  width: 50vw;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 300px;
+
+  display: inline-block;
+}

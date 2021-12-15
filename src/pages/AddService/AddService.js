@@ -18,7 +18,7 @@ const AddService = () => {
   };
   return (
     <div className="add-service bg-success">
-      <h1 className="text-dark fw-bold ">Add Service</h1>
+      <h1 className="text-light fw-bold ">Add Service</h1>
 
       <form onSubmit={handleSubmit(onSubmit)} className="form-style">
         <input {...register("serviceName")} placeholder="service name" />

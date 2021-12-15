@@ -24,8 +24,8 @@ const PlaceOrder = () => {
       });
   };
   return (
-    <div className="bg-warning">
-      <h1 className="text-success fw-bold ">Place Your Order</h1>
+    <div className="bg-success">
+      <h1 className="text-light fw-bold ">Place Your Order</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="form-style">
         <input {...register("name")} value={user.displayName || ""} readOnly />
         <input
